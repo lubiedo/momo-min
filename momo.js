@@ -18,7 +18,7 @@ if (!window.momo) {
            else
              htmls[i].style.removeProperty("filter")
          } else {
-           console.console.warn("momo: URL not http/https!")
+           console.warn("momo: URL not http/https!")
          }
        }
     }
