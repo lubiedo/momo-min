@@ -10,10 +10,10 @@ if (!window.momo) {
      url_re: /^https*\:\/\//i,
      toggle: function() {
        var htmls   = document.getElementsByTagName('html')
-       var enabled = window.momo.enabled = !window.momo.enabled
+       window.momo.enabled = !window.momo.enabled
        for (let i = 0; i < htmls.length; i++) {
          if (window.momo.url_re.test(document.location.href) === true) {
-           if (enabled)
+           if (window.momo.enabled)
              htmls[i].style.setProperty("filter", "grayscale(100%)")
            else
              htmls[i].style.removeProperty("filter")
